@@ -23,11 +23,7 @@ Conforme definido na configuração do ambiente via Docker Compose, o ecossistem
 Para subir o ambiente completo, é necessário ter o Docker instalado e seguir os passos abaixo:
 
 1. Clone o repositório.
-<<<<<<< HEAD
 2. Execute o comando na pasta fila-inteligente:
-=======
-2. Execute o comando na pasta raiz:
->>>>>>> d5e44d7263adbfa12d4d21711ee64b604b4a5ad0
    ```bash
    docker-compose up --build
 
