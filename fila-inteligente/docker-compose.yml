@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    env_file:
+      - .env
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  fila-service:
+    build: .
+    container_name: fila-service
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - rabbitmq
+
+  notification-service:
+    build:
+      context: ../notification-service
+    container_name: notification-service
+    env_file:
+      - .env
+    ports:
+      - "8081:8081"
+    depends_on:
+      - rabbitmq
+
+volumes:
+  postgres_data:
