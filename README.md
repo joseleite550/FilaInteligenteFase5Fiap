@@ -37,4 +37,4 @@ Para subir o ambiente completo, é necessário ter o Docker instalado e seguir o
 * MVP https://youtu.be/2HFyjKCFB9I
 
 * DOCUMENTO PDF MVP
-* 
+* https://github.com/joseleite550/fila-inteligente/blob/main/Relatorio_Fila_Inteligente_SUS.pdf
