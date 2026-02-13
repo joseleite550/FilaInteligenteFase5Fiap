@@ -31,3 +31,10 @@ Para subir o ambiente completo, é necessário ter o Docker instalado e seguir o
 
 * José Franklin Miranda Gomes Leite RA 361614
 * Vitor Henrique dos Santos  RA 361617
+
+**VIDEOS**
+* PITCH https://youtu.be/8QJJsKSFVUw
+* MVP https://youtu.be/2HFyjKCFB9I
+
+* DOCUMENTO PDF MVP
+* 
